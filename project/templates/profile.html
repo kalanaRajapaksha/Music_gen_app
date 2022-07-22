@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+<div  class="center" style="color:black;background-color:aqua;border:1px solid black;width:50%;padding-right:50px;margin:auto" >
+  <h2 style="text-align:center;font-weight:bolder;">MUSIC GENAROTOR</h2>
+</br>
+      <form style="text-align:center;" action="/oop" method="get">
+       <label>ENTER FILE NAME (exm.mid)</label>
+      </br></br>
+          <input type="text" name="file_name" required>
+          <button style="background-color:lightgreen" type="submit">ENTER</button>
+      </form>
+        </br></br>
+      </div>
+{% endblock %}

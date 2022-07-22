@@ -1,0 +1,17 @@
+\version "2.18.2"
+
+\header {
+	title = "Medley in Gb minor"
+	composer = "Robatim"
+}
+
+melody = { \key ges \minor \time 2/2 \tempo 2 = 72 ges'4 aes'8 ges'8 ges'4 ges'4 | aes'4 beses'8 aes'8 aes'4 aes'4 | f'4 eeses'8 des'8 f'4 aes'4 | beses'4 fes'4 ges'4 r4 }
+
+\score {
+	\new PianoStaff <<
+		\new Staff <<
+			\new Voice \clef "treble" { \melody }
+		>>
+	>>
+	\layout {}
+}

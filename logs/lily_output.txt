@@ -1,0 +1,17 @@
+\version "2.18.2"
+
+\header {
+	title = "Medley in F# minor"
+	composer = "Robatim"
+}
+
+melody = { \key fis \minor \time 3/4 \tempo 4 = 103 a'4. cis''8 b'4 | a'2 gis'4 | eis'4. eis'8 eis'4 | fis'2 d'4 | fis'2 fis'4 | a'2 gis'4 | fis'2. | r2. }
+
+\score {
+	\new PianoStaff <<
+		\new Staff <<
+			\new Voice \clef "treble" { \melody }
+		>>
+	>>
+	\layout {}
+}
